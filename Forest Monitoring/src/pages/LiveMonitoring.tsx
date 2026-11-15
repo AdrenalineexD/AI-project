@@ -242,13 +242,14 @@ export const LiveMonitoring: React.FC = () => {
       startAnalysis(stream);
       addToast('Camera feed started — AETHER Vision ACTIVE', 'success');
 
-      setEvents(prev => [{
+      const newEvent: EventEntry = {
         id: crypto.randomUUID(),
         ts: now(),
         label: 'STREAM STARTED',
         detail: 'Camera initialised. Live pixel analysis running.',
         severity: 'normal'
-      }, ...prev].slice(0, 20));
+      };
+      setEvents(prev => [newEvent, ...prev].slice(0, 20));
     } catch (err: any) {
       if (err?.name === 'NotAllowedError' || err?.name === 'PermissionDeniedError') {
         setCamState('denied');

@@ -2,6 +2,16 @@
 // AETHER — Backend types (mirrors Forest-management/backend/schemas.py)
 // ============================================================
 
+export type ActiveTab =
+  | 'landing'
+  | 'dashboard'
+  | 'incidents'
+  | 'map'
+  | 'heatmap'
+  | 'alerts'
+  | 'guide'
+  | 'admin';
+
 export type Role =
   | 'CITIZEN'
   | 'FIREFIGHTER'

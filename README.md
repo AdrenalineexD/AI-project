@@ -106,3 +106,4 @@ To keep the repository lightweight and follow Git best practices:
 ## 📄 License
 
 This project is licensed under the MIT License - see the repository documentation for details.
+
