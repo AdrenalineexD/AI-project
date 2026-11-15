@@ -1,0 +1,24 @@
+
+# Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Frontend dependencies and build files
+node_modules/
+dist/
+
+# Generated files
+frontend/tsconfig.tsbuildinfo
+
+# Model files (store separately or use Git LFS)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl

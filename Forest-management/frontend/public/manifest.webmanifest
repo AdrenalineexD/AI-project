@@ -1,0 +1,9 @@
+{
+  "name": "Wildfire Intelligence",
+  "short_name": "WildfireIQ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0d14",
+  "theme_color": "#ff6a3d",
+  "icons": []
+}

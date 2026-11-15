@@ -1,0 +1,1565 @@
+[
+  {
+    "id": "WF-2026-00001",
+    "created_at": "2026-09-23T16:38:05.201244+00:00",
+    "updated_at": "2026-09-23T16:44:25.843821+00:00",
+    "state": "ACKNOWLEDGED",
+    "severity": 3,
+    "severity_label": "POTENTIAL_WILDFIRE",
+    "location": {
+      "lat": 19.076,
+      "lon": 72.8777
+    },
+    "primary_class": "smoke",
+    "confidence": 0.92,
+    "persistence": {
+      "persistent": true,
+      "duration": 6.04,
+      "count": 6
+    },
+    "sources": [
+      {
+        "detection_id": "29a01287-43bf-4878-a95c-d136bdc7a19b",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.82,
+        "ts": "2026-09-23T16:38:05.201168+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "f63cb6f4-4394-4a30-9e67-8fbbd918eb64",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.84,
+        "ts": "2026-09-23T16:38:06.404633+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "d8d0420e-6609-4960-938c-aa46abc862c6",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.86,
+        "ts": "2026-09-23T16:38:07.608016+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "a063a419-d089-4095-8252-e4d10ea7599a",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.8799999999999999,
+        "ts": "2026-09-23T16:38:08.820561+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "f5af6330-1492-4e34-b02e-cfde35fa29f7",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.8999999999999999,
+        "ts": "2026-09-23T16:38:10.026524+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "0c4be34c-2b0e-4c9a-8dd2-75e7d33f2971",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.9199999999999999,
+        "ts": "2026-09-23T16:38:11.237349+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "e6c4d24d-4d82-4108-b613-d475fb9c01ce",
+        "source_id": "CAMERA-SIM-02",
+        "class": "fire",
+        "confidence": 0.79,
+        "ts": "2026-09-23T16:38:14.458977+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-09-23T16:38:05.201168+00:00",
+        "event": "incident_created",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:38:06.404633+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:38:07.608016+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:38:08.820561+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:38:10.026524+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:38:11.237349+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:38:14.458977+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-SIM-02"
+      },
+      {
+        "ts": "2026-09-23T16:40:11.269622+00:00",
+        "event": "state:ESCALATED",
+        "detail": "by system"
+      },
+      {
+        "ts": "2026-09-23T16:44:12.861394+00:00",
+        "event": "state:VERIFIED_INCIDENT",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:44:20.379507+00:00",
+        "event": "state:FALSE_POSITIVE",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:44:21.876170+00:00",
+        "event": "state:FALSE_POSITIVE",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:44:24.126542+00:00",
+        "event": "state:VERIFIED_INCIDENT",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:44:25.843836+00:00",
+        "event": "state:ACKNOWLEDGED",
+        "detail": "by user-demo"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.91,
+        "bbox": [
+          120.0,
+          90.0,
+          260.0,
+          420.0
+        ],
+        "source": "context"
+      },
+      {
+        "class": "car",
+        "confidence": 0.86,
+        "bbox": [
+          430.0,
+          200.0,
+          620.0,
+          380.0
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": "user-demo",
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00002",
+    "created_at": "2026-09-23T16:42:23.480170+00:00",
+    "updated_at": "2026-09-23T16:52:14.226356+00:00",
+    "state": "CREATED",
+    "severity": 3,
+    "severity_label": "POTENTIAL_WILDFIRE",
+    "location": {
+      "lat": 18.464225792555457,
+      "lon": 73.89247978906107
+    },
+    "primary_class": "smoke",
+    "confidence": 0.8818,
+    "persistence": {
+      "persistent": true,
+      "duration": 590.75,
+      "count": 13
+    },
+    "sources": [
+      {
+        "detection_id": "b8ae9ba8-f31a-4851-acf2-ee1c871d9643",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.5667,
+        "ts": "2026-09-23T16:42:23.477850+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "758f7064-122d-4b9c-adba-d50217ff6af1",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.5519,
+        "ts": "2026-09-23T16:42:23.478802+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "3a876000-fe3d-4a93-a0c0-3f78820f3063",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.7967,
+        "ts": "2026-09-23T16:42:35.229954+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "5292d88b-c84a-4fd1-9119-4d0f3368200a",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.8452,
+        "ts": "2026-09-23T16:42:39.758984+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "0d34ca94-7eed-420e-9d44-6e9bfe5a2511",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.5533,
+        "ts": "2026-09-23T16:43:23.108202+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "d9d28e4d-5307-4a08-a3e0-6d2118df97fb",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.3326,
+        "ts": "2026-09-23T16:43:30.192709+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "1a7fe200-5b2f-41b5-836c-c366da40068c",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.2758,
+        "ts": "2026-09-23T16:43:34.229812+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "38ceaaa4-86c0-49b8-a83a-3b1d75f55ad5",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.3648,
+        "ts": "2026-09-23T16:43:41.724456+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "6effd900-31a2-4877-bac7-0967c8da1498",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.8818,
+        "ts": "2026-09-23T16:43:45.961263+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "223cdccc-6e65-4151-b743-5c11f7d7f6be",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.6162,
+        "ts": "2026-09-23T16:52:14.225549+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-09-23T16:42:23.477850+00:00",
+        "event": "incident_created",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:42:23.478802+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:42:35.229954+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:42:39.758984+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:43:23.108202+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:43:23.110212+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      },
+      {
+        "ts": "2026-09-23T16:43:30.192709+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:43:34.229812+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:43:34.231267+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      },
+      {
+        "ts": "2026-09-23T16:43:41.724456+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:43:41.726094+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      },
+      {
+        "ts": "2026-09-23T16:43:45.961263+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:52:14.225549+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:52:14.226275+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.4841,
+        "bbox": [
+          270.1876220703125,
+          147.19281005859375,
+          638.8531494140625,
+          479.721923828125
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.4523,
+        "bbox": [
+          356.07708740234375,
+          65.96891784667969,
+          640.0,
+          479.26983642578125
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.3676,
+        "bbox": [
+          0.65374755859375,
+          3.246063232421875,
+          72.88289642333984,
+          479.39410400390625
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.4576,
+        "bbox": [
+          43.16606140136719,
+          200.7998504638672,
+          112.63893127441406,
+          477.72381591796875
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": null,
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00003",
+    "created_at": "2026-09-23T16:52:28.047109+00:00",
+    "updated_at": "2026-09-23T16:53:12.151323+00:00",
+    "state": "RESOLVED",
+    "severity": 0,
+    "severity_label": "NORMAL",
+    "location": {
+      "lat": 18.465853326652695,
+      "lon": 73.89163829911476
+    },
+    "primary_class": "fire",
+    "confidence": 0.7516,
+    "persistence": {
+      "persistent": true,
+      "duration": 604.57,
+      "count": 17
+    },
+    "sources": [
+      {
+        "detection_id": "b8c89179-a011-4c8a-b7c5-2306ca1cce89",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.7516,
+        "ts": "2026-09-23T16:52:28.046132+00:00",
+        "relation": "primary"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-09-23T16:52:28.046132+00:00",
+        "event": "incident_created",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T16:53:01.464801+00:00",
+        "event": "state:FALSE_POSITIVE",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:53:03.987684+00:00",
+        "event": "state:VERIFIED_INCIDENT",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:53:09.939450+00:00",
+        "event": "state:ACKNOWLEDGED",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T16:53:12.151356+00:00",
+        "event": "state:RESOLVED",
+        "detail": "by user-demo"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.5322,
+        "bbox": [
+          300.60626220703125,
+          309.018310546875,
+          506.843017578125,
+          479.73126220703125
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": "user-demo",
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00004",
+    "created_at": "2026-09-23T16:53:43.132551+00:00",
+    "updated_at": "2026-09-23T16:53:52.414175+00:00",
+    "state": "CREATED",
+    "severity": 3,
+    "severity_label": "POTENTIAL_WILDFIRE",
+    "location": {
+      "lat": 19.076,
+      "lon": 72.8777
+    },
+    "primary_class": "smoke",
+    "confidence": 0.92,
+    "persistence": {
+      "persistent": true,
+      "duration": 944.0,
+      "count": 12
+    },
+    "sources": [
+      {
+        "detection_id": "4910ae32-ecbb-48ff-a85e-8ee384152aed",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.82,
+        "ts": "2026-09-23T16:53:43.132235+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "46e8f6dc-99aa-479e-90f9-d48392b6f849",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.84,
+        "ts": "2026-09-23T16:53:44.345918+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "8ffa430c-db50-4139-8f7b-fa4c5b188242",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.86,
+        "ts": "2026-09-23T16:53:45.561892+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "8bc3c553-de34-458d-be43-0ca10f83aada",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.8799999999999999,
+        "ts": "2026-09-23T16:53:46.779567+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "00afe4ae-fdf1-48f0-ac98-63c030be36e8",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.8999999999999999,
+        "ts": "2026-09-23T16:53:47.988041+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "625f1cc3-965d-40fb-8ded-8c097159d40f",
+        "source_id": "CAMERA-SIM-01",
+        "class": "smoke",
+        "confidence": 0.9199999999999999,
+        "ts": "2026-09-23T16:53:49.197176+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "dd39e130-2efe-4df2-bb93-33003f973c00",
+        "source_id": "CAMERA-SIM-02",
+        "class": "fire",
+        "confidence": 0.79,
+        "ts": "2026-09-23T16:53:52.414017+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-09-23T16:53:43.132235+00:00",
+        "event": "incident_created",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:53:44.345918+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:53:45.561892+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:53:46.779567+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:53:47.988041+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:53:49.197176+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-SIM-01"
+      },
+      {
+        "ts": "2026-09-23T16:53:52.414017+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-SIM-02"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.91,
+        "bbox": [
+          120.0,
+          90.0,
+          260.0,
+          420.0
+        ],
+        "source": "context"
+      },
+      {
+        "class": "car",
+        "confidence": 0.86,
+        "bbox": [
+          430.0,
+          200.0,
+          620.0,
+          380.0
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": null,
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00005",
+    "created_at": "2026-09-23T17:06:47.299964+00:00",
+    "updated_at": "2026-09-23T17:07:32.135537+00:00",
+    "state": "RESOLVED",
+    "severity": 0,
+    "severity_label": "NORMAL",
+    "location": {
+      "lat": 18.465853326652695,
+      "lon": 73.89163829911476
+    },
+    "primary_class": "fire",
+    "confidence": 0.7979,
+    "persistence": {
+      "persistent": true,
+      "duration": 22.35,
+      "count": 9
+    },
+    "sources": [
+      {
+        "detection_id": "81380316-b83f-4842-b189-e61f5392b6ca",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.4616,
+        "ts": "2026-09-23T17:06:47.299296+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "2d77d7e5-556e-4da9-9ee1-ef8790303a78",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.3408,
+        "ts": "2026-09-23T17:06:49.838034+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "1dd57cb5-e3d8-444a-8343-491291d3fae1",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.7979,
+        "ts": "2026-09-23T17:06:58.802015+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "fafdefc0-5d3b-4131-8fc1-de5b3c2fb659",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.2914,
+        "ts": "2026-09-23T17:07:09.644680+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-09-23T17:06:47.299296+00:00",
+        "event": "incident_created",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T17:06:49.838034+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T17:06:58.802015+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T17:07:09.644680+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-23T17:07:18.840779+00:00",
+        "event": "state:FALSE_POSITIVE",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T17:07:20.267408+00:00",
+        "event": "state:VERIFIED_INCIDENT",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T17:07:25.842712+00:00",
+        "event": "state:ACKNOWLEDGED",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-23T17:07:32.135565+00:00",
+        "event": "state:RESOLVED",
+        "detail": "by user-demo"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": true
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": true
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": true
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.4805,
+        "bbox": [
+          198.028564453125,
+          94.48846435546875,
+          632.6666259765625,
+          478.897705078125
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": "user-demo",
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00006",
+    "created_at": "2026-09-24T04:43:02.521711+00:00",
+    "updated_at": "2026-09-24T04:45:29.952745+00:00",
+    "state": "RESOLVED",
+    "severity": 0,
+    "severity_label": "NORMAL",
+    "location": {
+      "lat": 18.464389935451273,
+      "lon": 73.86834145015682
+    },
+    "primary_class": "fire",
+    "confidence": 0.5032,
+    "persistence": {
+      "persistent": true,
+      "duration": 29.99,
+      "count": 8
+    },
+    "sources": [
+      {
+        "detection_id": "c27e233f-c548-437e-8be5-2c8dc8cf9a70",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.5032,
+        "ts": "2026-09-24T04:43:02.520852+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "485236cc-6388-468c-81d5-81d2552198ad",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.2777,
+        "ts": "2026-09-24T04:43:05.017528+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "03969825-3e83-474c-adbe-082f11b5871d",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.3317,
+        "ts": "2026-09-24T04:43:35.003880+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-09-24T04:43:02.520852+00:00",
+        "event": "incident_created",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-24T04:43:05.017528+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-24T04:43:05.018564+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      },
+      {
+        "ts": "2026-09-24T04:43:35.003880+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-09-24T04:43:35.005089+00:00",
+        "event": "context_updated",
+        "detail": "+2 context object(s)"
+      },
+      {
+        "ts": "2026-09-24T04:45:10.511451+00:00",
+        "event": "state:FALSE_POSITIVE",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-24T04:45:18.537403+00:00",
+        "event": "state:VERIFIED_INCIDENT",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-24T04:45:26.255126+00:00",
+        "event": "state:ACKNOWLEDGED",
+        "detail": "by user-demo"
+      },
+      {
+        "ts": "2026-09-24T04:45:29.952766+00:00",
+        "event": "state:RESOLVED",
+        "detail": "by user-demo"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.4391,
+        "bbox": [
+          115.31034851074219,
+          425.53271484375,
+          439.57464599609375,
+          479.6749267578125
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.6063,
+        "bbox": [
+          0.0,
+          0.46209716796875,
+          626.5245361328125,
+          479.8802490234375
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.3971,
+        "bbox": [
+          544.0438232421875,
+          85.24600219726562,
+          639.5823974609375,
+          479.0152282714844
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": "user-demo",
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00007",
+    "created_at": "2026-10-01T05:17:11.677565+00:00",
+    "updated_at": "2026-10-01T05:17:56.619766+00:00",
+    "state": "CREATED",
+    "severity": 3,
+    "severity_label": "POTENTIAL_WILDFIRE",
+    "location": {
+      "lat": 18.464168880592368,
+      "lon": 73.8676910929485
+    },
+    "primary_class": "fire",
+    "confidence": 0.8472,
+    "persistence": {
+      "persistent": true,
+      "duration": 24.04,
+      "count": 3
+    },
+    "sources": [
+      {
+        "detection_id": "6a2e8e0a-0d1c-42d8-8f8f-16b291896eca",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.8472,
+        "ts": "2026-10-01T05:17:11.676655+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "e99f9a2f-6d29-4e4d-ad4b-664f34ce6bbf",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.3225,
+        "ts": "2026-10-01T05:17:32.581471+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "2d323656-b14c-4dc9-b681-bc8793a59f1c",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.4962,
+        "ts": "2026-10-01T05:17:50.512595+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "b25c5156-40f7-4ef0-ac32-c119d755b137",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.7915,
+        "ts": "2026-10-01T05:17:56.618922+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-10-01T05:17:11.676655+00:00",
+        "event": "incident_created",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T05:17:32.581471+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T05:17:32.581932+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      },
+      {
+        "ts": "2026-10-01T05:17:50.512595+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T05:17:56.618922+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T05:17:56.619719+00:00",
+        "event": "context_updated",
+        "detail": "+1 context object(s)"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.3871,
+        "bbox": [
+          172.6876983642578,
+          0.0,
+          640.0,
+          73.77083587646484
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.7474,
+        "bbox": [
+          248.21392822265625,
+          0.25310516357421875,
+          639.673828125,
+          97.99237060546875
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.8735,
+        "bbox": [
+          207.48150634765625,
+          1.690460205078125,
+          638.8958740234375,
+          479.8106384277344
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": null,
+    "assigned_to": null,
+    "ai_summary": null
+  },
+  {
+    "id": "WF-2026-00008",
+    "created_at": "2026-10-01T07:49:17.483949+00:00",
+    "updated_at": "2026-10-01T07:49:41.668355+00:00",
+    "state": "CREATED",
+    "severity": 3,
+    "severity_label": "POTENTIAL_WILDFIRE",
+    "location": {
+      "lat": 18.464082631450854,
+      "lon": 73.86764192750574
+    },
+    "primary_class": "fire",
+    "confidence": 0.8779,
+    "persistence": {
+      "persistent": true,
+      "duration": 24.18,
+      "count": 15
+    },
+    "sources": [
+      {
+        "detection_id": "26b29b0f-9b88-4eed-a681-c155cfc1ca75",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.8779,
+        "ts": "2026-10-01T07:49:17.483561+00:00",
+        "relation": "primary"
+      },
+      {
+        "detection_id": "26c3b542-db4d-4fae-a13c-471de318b923",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.5684,
+        "ts": "2026-10-01T07:49:19.158802+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "897e9c2b-acc0-4139-b3ad-1183ef053e69",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.3475,
+        "ts": "2026-10-01T07:49:28.668711+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "c4fd7610-6773-4089-a2af-2c7539c4c8a4",
+        "source_id": "CAMERA-001",
+        "class": "smoke",
+        "confidence": 0.6905,
+        "ts": "2026-10-01T07:49:38.613192+00:00",
+        "relation": "corroborating"
+      },
+      {
+        "detection_id": "28195cc1-0f8a-4e02-a58a-3003211d3362",
+        "source_id": "CAMERA-001",
+        "class": "fire",
+        "confidence": 0.8104,
+        "ts": "2026-10-01T07:49:41.667037+00:00",
+        "relation": "corroborating"
+      }
+    ],
+    "timeline": [
+      {
+        "ts": "2026-10-01T07:49:17.483561+00:00",
+        "event": "incident_created",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T07:49:19.158802+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T07:49:19.166383+00:00",
+        "event": "context_updated",
+        "detail": "+2 context object(s)"
+      },
+      {
+        "ts": "2026-10-01T07:49:28.668711+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T07:49:38.613192+00:00",
+        "event": "corroborating_detection",
+        "detail": "smoke from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T07:49:41.667037+00:00",
+        "event": "corroborating_detection",
+        "detail": "fire from CAMERA-001"
+      },
+      {
+        "ts": "2026-10-01T07:49:41.668287+00:00",
+        "event": "context_updated",
+        "detail": "+2 context object(s)"
+      }
+    ],
+    "checklist": [
+      {
+        "key": "detection_reviewed",
+        "label": "Detection reviewed",
+        "done": false
+      },
+      {
+        "key": "location_verified",
+        "label": "Location verified",
+        "done": false
+      },
+      {
+        "key": "source_camera_checked",
+        "label": "Source camera checked",
+        "done": false
+      },
+      {
+        "key": "additional_sources",
+        "label": "Additional sources checked",
+        "done": false
+      },
+      {
+        "key": "personnel_notified",
+        "label": "Appropriate personnel notified",
+        "done": false
+      },
+      {
+        "key": "incident_acknowledged",
+        "label": "Incident acknowledged",
+        "done": false
+      },
+      {
+        "key": "procedure_reviewed",
+        "label": "Official procedure reviewed",
+        "done": false
+      },
+      {
+        "key": "response_assigned",
+        "label": "Response assigned",
+        "done": false
+      },
+      {
+        "key": "situation_updated",
+        "label": "Situation updated",
+        "done": false
+      },
+      {
+        "key": "incident_resolved",
+        "label": "Incident resolved",
+        "done": false
+      }
+    ],
+    "notes": [],
+    "context": [
+      {
+        "class": "person",
+        "confidence": 0.7206,
+        "bbox": [
+          9.121734619140625,
+          303.101806640625,
+          322.46697998046875,
+          479.435546875
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.3682,
+        "bbox": [
+          11.42730712890625,
+          2.45166015625,
+          570.3206787109375,
+          477.7540588378906
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.5185,
+        "bbox": [
+          185.77056884765625,
+          417.94561767578125,
+          405.2855224609375,
+          479.69622802734375
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.5113,
+        "bbox": [
+          263.3226318359375,
+          58.002044677734375,
+          566.60791015625,
+          148.313720703125
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.9014,
+        "bbox": [
+          7.910675048828125,
+          250.94775390625,
+          322.619140625,
+          479.57098388671875
+        ],
+        "source": "context"
+      },
+      {
+        "class": "person",
+        "confidence": 0.3899,
+        "bbox": [
+          352.854248046875,
+          0.0,
+          639.8367309570312,
+          446.54180908203125
+        ],
+        "source": "context"
+      }
+    ],
+    "acknowledged_by": null,
+    "assigned_to": null,
+    "ai_summary": null
+  }
+]

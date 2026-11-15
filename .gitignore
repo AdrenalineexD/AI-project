@@ -1,0 +1,71 @@
+# ── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Python virtual environments ───────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Model weights & binary assets (too large for GitHub) ─────────────────────
+*.pt
+*.onnx
+*.pth
+*.h5
+*.pkl
+*.joblib
+*.bin
+yolov8n/
+archive/
+
+# ── Archives ──────────────────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# ── Output / training artefacts ───────────────────────────────────────────────
+outputs/
+archive/
+runs/
+wandb/
+mlruns/
+checkpoints/
+*.log
+
+# ── Build outputs ─────────────────────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env*.local
+
+# ── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Vite / TypeScript cache ───────────────────────────────────────────────────
+*.tsbuildinfo
+.vite/
